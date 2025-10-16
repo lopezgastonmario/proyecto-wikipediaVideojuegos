@@ -19,13 +19,13 @@ header {
   align-items: center;
   background-color: #181818;
   padding: 1rem 2rem;
-  border-bottom: 2px solid #00ff99;
+  border-bottom: 2px solid #ff7f00;
 }
 
 .logo {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #00ff99;
+  color: #ff7f00;
 }
 
 nav a {
@@ -38,17 +38,16 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: #00ff99;
+  color: #ff7f00;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #00ff99, #0077ff);
+  background: linear-gradient(135deg, #ff6600, #ff7f00, #ff9933);
   color: #fff;
   text-align: center;
   padding: 4rem 1rem;
 }
-
 .hero-content h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -75,7 +74,7 @@ nav a.active {
 }
 
 .hero button {
-  background-color: #00ff99;
+  background-color: #ff7f00;
   color: #0f0f0f;
   border: none;
   border-radius: 8px;
@@ -86,7 +85,7 @@ nav a.active {
 }
 
 .hero button:hover {
-  background-color: #00cc7a;
+  background-color: #ff7f00;
 }
 
 /* DESTACADOS */
@@ -117,7 +116,7 @@ nav a.active {
 
 .card:hover {
   transform: translateY(-5px);
-  border-color: #00ff99;
+  border-color: #ff7f00;
 }
 
 .card img {
@@ -142,7 +141,7 @@ footer {
   text-align: center;
   padding: 1rem;
   background-color: #181818;
-  border-top: 2px solid #00ff99;
+  border-top: 2px solid #ff7f00;
   margin-top: 2rem;
 }
 
