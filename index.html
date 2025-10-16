@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamepedia | Tu enciclopedia de videojuegos</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">🎮 Gamepedia</div>
+    <nav>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="explorar.html">Explorar</a>
+      <a href="#">Noticias</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO / BÚSQUEDA PRINCIPAL -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Encuentra cualquier videojuego</h1>
+      <p>Busca por título y descubre su historia, género, plataformas y mucho más.</p>
+      <form id="form-busqueda" action="#">
+        <input type="text" id="busqueda" placeholder="🔍 Escribe el nombre del juego...">
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DESTACADOS -->
+  <section class="destacados">
+    <h2>🎯 Juegos Destacados</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="img/eldenring.png" alt="Elden Ring">
+        <h3>Elden Ring</h3>
+        <p>RPG - FromSoftware</p>
+      </article>
+      <article class="card">
+        <img src="img/gta6.png" alt="GTA 6">
+        <h3>GTA 6</h3>
+        <p>Acción / Aventura - Rockstar</p>
+      </article>
+      <article class="card">
+        <img src="img/zelda.png" alt="Zelda TOTK">
+        <h3>Zelda: Tears of the Kingdom</h3>
+        <p>Aventura - Nintendo</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Gamepedia — Creado por [Tu nombre]</p>
+  </footer>
+
 </body>
 </html>
