@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar videojuegos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <style>
+        .buscar-container {
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .buscar-container h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .filter-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .filter-box select,
+        .filter-box input {
+            padding: 12px;
+            border-radius: 6px;
+            border: none;
+            width: 100%;
+        }
+
+        .btn-buscar {
+            grid-column: span 2;
+            padding: 14px;
+            background-color: #7c3aed; /* tu morado */
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-buscar:hover {
+            background-color: #9d4bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ✅ Tu cabecera con menú -->
+<header>
+  <div class="logo">GameVerse</div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="explorar.html">Explorar</a>
+    <a href="buscar.html">Buscar</a>
+    <a class="active" href="donaciones.html">Donar</a>
+    <a href="sobre.html">Sobre mí</a>
+  </nav>
+</header>
+
+<!-- ✅ Nuestro contenido -->
+<main class="buscar-container">
+    <h1>Buscar videojuegos según tus gustos 🎮</h1>
+
+    <div class="filter-box">
+
+        <select>
+            <option>Género</option>
+            <option>Acción</option>
+            <option>Aventura</option>
+            <option>RPG</option>
+            <option>Shooter</option>
+            <option>Deportes</option>
+            <option>Simulación</option>
+            <option>Estrategia</option>
+        </select>
+
+        <select>
+            <option>Plataforma</option>
+            <option>PC</option>
+            <option>PS5</option>
+            <option>Xbox</option>
+            <option>Nintendo Switch</option>
+            <option>Móvil</option>
+        </select>
+
+        <select>
+            <option>Modo de juego</option>
+            <option>Online</option>
+            <option>Offline</option>
+            <option>Ambos</option>
+        </select>
+
+        <select>
+            <option>Estilo gráfico</option>
+            <option>Realista</option>
+            <option>Pixel Art</option>
+            <option>Anime</option>
+            <option>Cartoon</option>
+            <option>Low Poly</option>
+        </select>
+
+        <input type="number" placeholder="Duración mínima (h)">
+        <input type="number" placeholder="Duración máxima (h)">
+
+        <select>
+            <option>¿Tiene online?</option>
+            <option>Sí</option>
+            <option>No</option>
+        </select>
+
+        <input type="number" placeholder="Precio máximo (€)">
+
+        <button class="btn-buscar">Buscar ahora</button>
+    </div>
+</main>
+
+</body>
+</html>

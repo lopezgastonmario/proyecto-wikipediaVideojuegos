@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorar videojuegos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 32px;
+    }
+
+    /* Contenedor */
+    .juegos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Tarjeta */
+    .juego-card {
+      background: #181818;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform .2s, box-shadow .2s;
+      border: 1px solid #8228ff55;
+    }
+
+    .juego-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #8228ff;
+    }
+
+    /* Imagen */
+    .juego-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    /* Botón */
+    .juego-card button {
+      background: #8228ff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background .2s;
+    }
+
+    .juego-card button:hover {
+      background: #a05cff;
+    }
+
+  </style>
+</head>
+<body>
+    <header>
+  <div class="logo">Gamepedia</div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="explorar.html">Explorar</a>
+    <a href="buscar.html">Buscar</a>
+    <a href="donaciones.html">Donar</a>
+    <a href="sobre.html">Sobre mí</a>
+  </nav>
+</header>
+
+  <h1>Explorar videojuegos</h1>
+
+  <div class="juegos-container" id="contenedorJuegos">
+
+    <!-- Tarjetas de ejemplo -->
+    <div class="juego-card">
+      <img src="https://via.placeholder.com/200x250" alt="Juego 1">
+      <h3>God of War</h3>
+      <p>Acción / Aventura</p>
+      <button>Ver más</button>
+    </div>
+
+    <div class="juego-card">
+      <img src="https://via.placeholder.com/200x250" alt="Juego 2">
+      <h3>Halo Infinite</h3>
+      <p>Shooter / Sci-Fi</p>
+      <button>Ver más</button>
+    </div>
+
+    <div class="juego-card">
+      <img src="https://via.placeholder.com/200x250" alt="Juego 3">
+      <h3>Minecraft</h3>
+      <p>Sandbox / Supervivencia</p>
+      <button>Ver más</button>
+    </div>
+
+  </div>
+
+  <!-- Script para cargar dinámicamente en el futuro -->
+  <script>
+    // Ejemplo futuro:
+    // fetch("games.json")
+    //  .then(res => res.json())
+    //  .then(games => mostrarJuegos(games));
+
+    function mostrarJuegos(lista) {
+      const contenedor = document.getElementById("contenedorJuegos");
+      contenedor.innerHTML = "";
+
+      lista.forEach(juego => {
+        let card = `
+          <div class="juego-card">
+            <img src="${juego.img}" alt="${juego.nombre}">
+            <h3>${juego.nombre}</h3>
+            <p>${juego.genero}</p>
+            <button>Ver más</button>
+          </div>
+        `;
+        contenedor.innerHTML += card;
+      });
+    }
+  </script>
+
+</body>
+</html>
